@@ -1,0 +1,143 @@
+#receitas{
+    color: rgb(41, 41, 41) ;
+}
+
+section{
+    padding-top: 90px;
+    background-color: rgb(255, 255, 255, 0.85);
+    
+}
+/*-----Pesquisa-----*/
+/*Div*/
+.pesquisa{
+    grid-column: 2;
+    display: flex;
+
+    background-color: transparent;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    margin-left: 50%;
+    margin-top: 40px;
+    width: 45%;
+    height: fit-content;
+
+    border-radius: 3px;
+    border-color: #858585;
+    border-style: solid;
+    border-width: 2px;
+
+    outline:none;
+    transition: border-color 0.4s ease 0s;
+}
+.pesquisa:hover{
+    border-color: rgb(41, 41, 41);
+}
+/*FimDiv*/
+
+
+/*Input*/
+.cpesquisa{
+    width: 100%;
+    padding-left: 9px;
+    padding-right: 5px;
+    outline:none;
+    background-color: transparent;
+    border-color: #858585;
+    border-style: none;
+    border-width: 2px;
+
+}
+/*FimInput*/
+
+
+/*Imagem*/
+.lupa{
+    height: 20px;
+    filter: opacity(50%);
+    transition: filter 0.4s ease 0s;
+}
+.pesquisa:hover .lupa{
+    filter: opacity(100%);
+}
+.lupab{
+    cursor: pointer;
+    margin: 9px 9px 9px 0px;
+    padding: 0;
+    font-size: 0;
+    text-decoration: none;
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+}
+/*FimImagem*/
+/*-----FimPesquisa-----*/
+
+
+/*-----Receitas-----*/
+/*DivColunas*/
+.colunas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px 7% 0px 7%;
+    grid-column-gap: 25px;
+}
+/*FimDivColunas*/
+
+/*Colunas*/
+.r1{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+/*FimColunas*/
+
+/*Cartoes*/
+.receitas{
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(170, 170, 170, 0.2);
+    border-radius: 3px;
+    margin-bottom: 25px;
+    padding: 23px 20px;
+    
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+}
+.titulorec{
+    font-family: "Anton", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #414141;
+    letter-spacing: 0.08em;
+}
+.linharec{
+    border-color: rgb(242, 191, 94);
+    border-style: solid;
+    border-width: 1.5px;
+    margin-bottom: 12px;
+}
+.paragraforec{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: #414141;
+    font-weight: 500;
+    margin-bottom: 30px;
+    
+}
+.pratos{
+    align-self: center;
+    width: 100%;
+    height: fit-content;
+}
+/*Cartoes*/
+/*-----FimReceitas-----*/
+
+@media (max-width: 570px){
+    .pesquisa{
+        width: auto;
+        margin: 10px 7%;
+    }
+    .colunas{
+        grid-template-columns: 1fr;
+    }
+} 

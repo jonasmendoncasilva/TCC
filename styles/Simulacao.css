@@ -1,0 +1,159 @@
+#simulacao{
+    color: rgb(41, 41, 41) ;
+}
+
+section{
+    padding-top: 90px;
+    background-color: rgb(255, 255, 255);
+}
+section > form{
+    display: grid;
+    grid-gap: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.primeiro, .segundo{
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Inputs*/
+.inputs, .calculo{
+    background-color: white;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    padding: 9px;
+    margin: 10px 0 10px 0;
+    margin-right: 50px;
+    width: 260px;
+    
+    border-radius: 3px;
+    border-color: #858585;
+    border-style: solid;
+    border-width: 2px;
+
+    outline:none;
+    transition: border-color 0.4s ease 0s;
+}
+.inputs:hover, .inputs:focus{
+    border-color: rgb(41, 41, 41);
+}
+/*FimInputs*/
+
+
+/*InputMenor*/
+.menor{
+    width: 160px;
+}
+/*FimInputMenor*/
+
+
+/*Seletor*/
+.seletor{
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: url(../img/arrow.png) no-repeat;
+    background-size: 25px;
+    background-position: 97% center;
+}
+/*FimSeletor*/
+
+
+/*Cálculo*/
+.calculo{
+    width: fit-content;
+    width: -moz-fit-content;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: -40px 0 0 0;
+
+    font-size: 13px;
+    cursor: pointer;
+}
+.calculo:hover{
+    border-color: rgb(41, 41, 41);
+}
+/*FimCálculo*/
+
+
+/*Resultado e labels*/
+.rmaior, .rmenor{
+    border-color: rgb(41, 41, 41);
+    cursor: default;
+}
+.rmaior{
+    width: 260px;
+}
+.rmenor{
+    width: 160px;
+}
+.resultado{
+    margin: 50px 50px 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.input_label{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    margin-left: 5px;
+    color: #414141;
+    font-family: 'montserrat';
+}
+/*fimResultado e labels*/
+
+
+/*Titulo*/
+.h21, .h22{
+    font-family: "Montserrat", arial, sans-serif; 
+    color: #414141;
+}
+.h21{
+    font-weight: 400;
+    margin-top: 30px;
+    font-size: 25px;
+}
+.h22{
+    font-weight: 300;
+}
+/*FimTitulo*/
+
+/*mensagem de erro*/
+.erro{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    border-radius: 4px;
+    background-color: rgb(255,87,110);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    width: 290px;
+    height: fit-content;
+
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    padding: 10px;
+    margin: -20px;
+}
+/*mensagem de erro*/
+
+@media (max-width: 570px){
+    .menor, .rmenor, .inputs, .erro{
+        width: 100%;
+    }
+    .primeiro{
+        margin-bottom: 0px;
+    }
+    .calculo{
+        margin: 0;
+        display: flex;
+        justify-self: center;
+    }
+    .resultado, .primeiro, .segundo{
+        flex-direction: column;
+    }
+} 
