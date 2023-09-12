@@ -1,5 +1,8 @@
 # Projeto de conclusão de curso 
 
+## HELPER CARROT
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/jonasmendoncasilva/TCC/blob/main/LICENSE)
+
 ## Propósito do projeto
 Intitulado Helper Carrot, a página web visa ajudar o usuário a tornar sua vida mais saudável por meio de dicas de saúde, cálculo de métricas corporais e opções de alimentação.
 
