@@ -10,7 +10,7 @@ Intitulado Helper Carrot, a página web visa ajudar o usuário a tornar sua vida
 * CSS
 
 ## Documentação
-Encontra-se hospedada no link abaixo:
+Encontra-se hospedada no link:
 www.linkedin.com/in/jonas-silva-7448821a2
 
 ## Agradecimentos
